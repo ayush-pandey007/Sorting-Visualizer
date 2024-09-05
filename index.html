@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="array-container"></div>
+      <div id="control-container">
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            Select Algorithm <span class="dropdown-arrow"></span>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" data-value="1">Bubble Sort</a>
+            <a href="#" data-value="2">Inserstion Sort</a>
+            <a href="#" data-value="3">Merge Sort</a>
+            <a href="#" data-value="4">Selection Sort</a>
+            <a href="#" data-value="5">Quick Sort</a>
+            <a href="#" data-value="6">Radix Sort</a>
+            <a href="#" data-value="7">Heap Sort</a>
+          </div>
+        </div>
+        <button id="sortButton">Sort</button>
+        <button id="resetButton" class="reset">Reset</button>
+        <div class="slider-container">
+          <label for="slider">Range:</label>
+          <input type="range" id="slider" min="10" max="100" value="40" />
+          <span id="slider-value">40</span>
+        </div>
+        <div class="slider-container">
+          <label for="slider">Speed:</label>
+          <input type="range" id="speed" min="0" max="990" value="1000" />
+          <span id="speed-value">1000</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
