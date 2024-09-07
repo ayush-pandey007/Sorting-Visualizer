@@ -113,7 +113,7 @@ async function animateSwap(index1, index2, arr) {
   bar[index1].style.height = `${arr[index1]}px`;
   bar[index2].style.height = `${arr[index2]}px`;
 
-  await delay(speedOfAlgo);
+  // await delay(speedOfAlgo);
 
   bar[index1].style.backgroundColor = "#f9e400";
   bar[index2].style.backgroundColor = "#f9e400";
@@ -148,11 +148,13 @@ async function insertionSortHelper(key, index1, index2, arr) {
   bar[index1].style.backgroundColor = "#F5004F";
   bar[index2].style.backgroundColor = "#F5004F";
 
-  await delay(speedOfAlgo);
   bar[index1].style.height = `${arr[index1]}px`;
-  bar[index2].style.height = `${arr[index2]}px`;
-
   await delay(speedOfAlgo);
+  bar[index2].style.height = `${arr[index2]}px`;
+  if (arrayToCreateBars.length < 28) bar[index1].innerHTML = arr[index1];
+  if (arrayToCreateBars.length < 28) bar[index2].innerHTML = arr[index2];
+
+  // await delay(speedOfAlgo);
   // bar[index1].innerHTML = arr[index1];
   // bar[index2].innerHTML = arr[index2];
 
